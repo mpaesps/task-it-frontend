@@ -1,0 +1,14 @@
+<ion-card *ngFor="let task of tasks">
+  <ion-card-header>
+    <ion-card-title>{{ task.title }}</ion-card-title>
+    <div class="header-icons">
+      <ion-icon name="trash-outline" (click)="confirmDeleteTask(task)"></ion-icon>
+      <ion-icon name="create-outline" (click)="editTask(task)"></ion-icon>
+      <ion-icon name="checkmark-circle-outline" (click)="toggleTaskCompletion(task)"></ion-icon>
+    </div>
+  </ion-card-header>
+
+  <ion-card-content>
+    {{ task.content }}
+  </ion-card-content>
+</ion-card>

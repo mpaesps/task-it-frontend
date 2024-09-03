@@ -1,0 +1,25 @@
+ion-card{
+    background-color: rgba(255, 255, 255, 0.603);
+    margin-top: 16px;
+    margin-bottom: 16px;
+    border-radius: 16px;
+    box-shadow: 100%;
+}
+
+ion-card-title{
+    color: var(--ion-color-tertiary);
+}
+
+ion-card-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.header-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 16px;
+    font-size: 24px;
+  
+}
